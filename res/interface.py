@@ -14,6 +14,13 @@ def make_label(frame, text, bg, fg, x, y, anchor, size):
 
 
 
+def mouse_enter_tool(e):
+    if e.widget['background'] != TOOL_BG_CLICKED:
+        e.widget['background'] = TOOL_BG_HOVER
+
+
+
+
 def make_tool_button(frame, height, width, x, y, command, image_dir):
     image = Image.open(image_dir)
     image = image.resize((45, 45), Image.ANTIALIAS)
