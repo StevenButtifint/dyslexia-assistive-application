@@ -9,6 +9,7 @@ class Window:
         self.window.resizable(0, 0)
         self.window.geometry(HOME_DIMENSIONS)
         self.window.title(APP_TITLE)
+        self.window.iconbitmap(self.resource_path(APP_ICON_DIR))
 
 
 if __name__ == "__main__":
