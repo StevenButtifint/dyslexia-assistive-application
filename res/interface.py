@@ -19,6 +19,11 @@ def mouse_enter_tool(e):
         e.widget['background'] = TOOL_BG_HOVER
 
 
+def mouse_leave_tool(e):
+    if e.widget['background'] != TOOL_BG_CLICKED:
+        e.widget['background'] = TOOL_BG
+
+
 
 
 def make_tool_button(frame, height, width, x, y, command, image_dir):
