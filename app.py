@@ -21,6 +21,14 @@ class Window:
             self.tool_selected.config(bg=TOOL_BG)
         self.tool_selected = tool_button
 
+    @staticmethod
+    def resource_path(relative_path):
+        # res path based on running local or deployed version
+        try:
+            base_path = sys._MEIPASS
+        except Exception:
+            base_path = os.path.abspath(".")
+        return os.path.join(base_path, relative_path)
 
 
 if __name__ == "__main__":
