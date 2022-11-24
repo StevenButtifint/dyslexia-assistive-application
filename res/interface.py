@@ -24,6 +24,8 @@ def mouse_leave_tool(e):
         e.widget['background'] = TOOL_BG
 
 
+def mouse_release_tool(e):
+    e.widget['background'] = TOOL_BG_CLICKED
 
 
 def mouse_enter_tile(e):
