@@ -26,6 +26,14 @@ def mouse_leave_tool(e):
 
 
 
+def mouse_enter_tile(e):
+    e.widget.config(borderwidth=3)
+
+
+def mouse_leave_tile(e):
+    e.widget.config(borderwidth=1)
+
+
 def make_tool_button(frame, height, width, x, y, command, image_dir):
     image = Image.open(image_dir)
     image = image.resize((45, 45), Image.ANTIALIAS)
