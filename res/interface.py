@@ -42,3 +42,14 @@ def make_tool_button(frame, height, width, x, y, command, image_dir):
     return new_button
 
 
+def make_img_button(frame, text, height, width, bg, fg, x, y, command, size, image_dir):
+    image = tk.PhotoImage(file=image_dir)
+    new_button = tk.Button(frame, text=text, height=height, width=width, bg=bg, fg=fg, image=image)
+    new_button.config(activebackground=TOOL_BG_CLICKED, command=command)
+    new_button.image = image
+    new_button['font'] = font.Font(family='Helvetica', size=size)
+    new_button['borderwidth'] = 0.5
+    new_button.place(x=x, y=y, anchor="center")
+    return new_button
+
+
