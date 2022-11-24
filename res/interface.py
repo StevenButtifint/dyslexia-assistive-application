@@ -53,3 +53,14 @@ def make_img_button(frame, text, height, width, bg, fg, x, y, command, size, ima
     return new_button
 
 
+def make_button(frame, text, height, width, bg, fg, x, y, command, size):
+    new_button = tk.Button(frame, text=text, height=height, width=width, bg=bg, fg=fg)
+    new_button.config(activebackground=TOOL_BG_CLICKED, command=command)
+    new_button['font'] = font.Font(family='Helvetica', size=size)
+    new_button['borderwidth'] = 1
+    new_button.place(x=x, y=y, anchor="center")
+    new_button.bind("<Enter>", mouse_enter_tile)
+    new_button.bind("<Leave>", mouse_leave_tile)
+    return new_button
+
+
