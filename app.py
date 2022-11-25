@@ -15,6 +15,14 @@ class Window:
     def _create_tool_bar(self):
         toolbar_frame = make_static_frame(self.window, TOOLBAR_BG, 2000, 85, 0, 0, "nw")
 
+    def _create_home_page(self):
+        self._tool_selected(self.home_tool)
+        self.notice_label.config(text=HOME_NOTICE)
+        self.window.geometry(HOME_DIMENSIONS)
+        self.options_frame.destroy()
+        self.options_frame = make_static_frame(self.window, "red", 600, 25, 0, 75, "nw")
+
+
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
         if self.tool_selected is not tool_button:
