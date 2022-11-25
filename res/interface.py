@@ -74,3 +74,10 @@ def make_button(frame, text, height, width, bg, fg, x, y, command, size):
     return new_button
 
 
+def makeScale(frame, min_val, max_val, x, y, height, width, bg, fg, command):
+    scale = tk.Scale(frame, orient='horizontal', from_=min_val, to=max_val, width=height, length=width, bg=bg, fg=fg)
+    scale.config(highlightthickness=0, command=command)
+    scale.place(x=x, y=y, anchor="center")
+    return scale
+
+
