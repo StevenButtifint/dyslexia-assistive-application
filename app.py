@@ -14,6 +14,9 @@ class Window:
 
     def _create_tool_bar(self):
         toolbar_frame = make_static_frame(self.window, TOOLBAR_BG, 2000, 85, 0, 0, "nw")
+        self.home_tool = make_tool_button(toolbar_frame, 50, 50, 1, 1, lambda: self._create_home_page(), HOME_ICON_DIR)
+        self.tool_selected = self.home_tool
+        self.home_tool.config(bg=TOOL_BG_CLICKED)
 
     def _create_home_page(self):
         self._tool_selected(self.home_tool)
