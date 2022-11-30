@@ -19,6 +19,10 @@ BUTTON_BG_HOVER = "#4ad2ff"
 NOTICE_BG = "#4ad2fe"
 NOTICE_TEXT = "black"
 
+GREYSCALE_COLOURS = ["#000000", "#333333", "#666666", "#999999", "#cccccc", "#eeeeee"]
+OVERLAY_COLOURS = ["#63a6ba", "#1a647a", "#c7a567", "#bf7e08", "#75b072", "#336130",
+                   "red", "red", "red", "red", "red", "red"]
+
 
 # labels
 HOME_NOTICE = "Welcome! Select a tool to get started."
