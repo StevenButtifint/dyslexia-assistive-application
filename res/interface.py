@@ -1,4 +1,5 @@
 import tkinter as tk
+import tkinter.font as font
 def make_static_frame(frame, bg, w, h, x, y, anchor):
     new_frame = tk.Frame(frame, bg=bg)
     new_frame.place(width=w, height=h, x=x, y=y, anchor=anchor)
@@ -12,6 +13,18 @@ def make_label(frame, text, bg, fg, x, y, anchor, size):
     return label
 
 
+def make_option_menu(frame, options, default_idx, x, y, anchor, bg):
+    string_var = tk.StringVar(frame)
+    string_var.set(options[default_idx])
+    option_menu = tk.OptionMenu(frame, string_var, *options)
+    option_menu.config(bg=bg)
+    option_menu["menu"].config(bg=bg)
+    option_menu["highlightthickness"]=0
+    # option_menu.config(bg=bg, highlightthickness=0, activebackground=BUTTON_BG_HOVER)
+    # option_menu["menu"].config(borderwidth=0, bg=bg)
+    option_menu["borderwidth"]=1
+    option_menu.place(x=x, y=y, anchor=anchor)
+    return option_menu
 
 
 def mouse_enter_tool(e):
