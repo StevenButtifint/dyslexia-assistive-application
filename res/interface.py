@@ -94,3 +94,9 @@ def makeScale(frame, min_val, max_val, x, y, height, width, bg, fg, command):
     return scale
 
 
+def make_scaling_text_box(frame, bg, fg, height, width, font):
+    text_box = tk.Text(frame, bg=bg, fg=fg, height=height, width=width, font=font)
+    text_box.pack(side=tk.LEFT, fill=tk.BOTH, expand=tk.YES)
+    return text_box
+
+
