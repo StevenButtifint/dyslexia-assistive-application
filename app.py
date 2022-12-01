@@ -25,6 +25,12 @@ class Window:
         self.options_frame.destroy()
         self.options_frame = make_static_frame(self.window, "red", 600, 25, 0, 75, "nw")
 
+    def _colour_overlay(self):
+        self._tool_selected(self.colour_overlay)
+        self.notice_label.config(text=COLOUR_OVERLAY_NOTICE)
+        self.options_frame.destroy()
+        self.window_opaque = True
+        self.options_frame = make_static_frame(self.window, OVERLAY_COLOURS[0], 2000, 1500, 0, 75, "nw")
 
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
