@@ -39,6 +39,15 @@ class Window:
         self.alpha_label.config(font=font.Font(slant="italic"))
         self.alpha_toggle = make_img_button(self.options_frame, "", 20, 100, OVERLAY_COLOURS[0], "black", 72, 26+19, lambda: self._toggle_window_opaque(True), 0, POWER_ICON_DIR)
 
+        self.colours_label = make_label(self.options_frame, "Background Colour", OVERLAY_COLOURS[0], "black", 505, 20, "center", 12)
+        self.colours_label.config(font=font.Font(slant="italic"))
+
+        self.colour_buttons = []
+        for x in range(0, len(OVERLAY_COLOURS)):
+            self.colour_buttons.append(make_button(self.options_frame, "", 11, 16, OVERLAY_COLOURS[x], "black", 340+(30*x), 26+19, lambda c=x: self._set_overlay_colour(c), 1))
+
+        self.window.geometry(OVERLAY_DIMENSIONS)
+
 
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
