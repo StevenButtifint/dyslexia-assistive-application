@@ -31,6 +31,14 @@ class Window:
         self.options_frame.destroy()
         self.window_opaque = True
         self.options_frame = make_static_frame(self.window, OVERLAY_COLOURS[0], 2000, 1500, 0, 75, "nw")
+        self.toggle_label = make_label(self.options_frame, "Toggle overlay", OVERLAY_COLOURS[0], "black", 72, 20, "center", 12)
+        self.toggle_label.config(font=font.Font(slant="italic"))
+        self.alpha_scale = makeScale(self.options_frame, 20, 90, 225, 26+19, 22, 160, OVERLAY_COLOURS[0], "blue", lambda _=None: self._toggle_window_opaque(False))
+        self.alpha_scale.config(showvalue=0, troughcolor=OVERLAY_COLOURS[0])
+        self.alpha_label = make_label(self.options_frame, "Opacity: 20%", OVERLAY_COLOURS[0], "black", 175, 8, "nw", 12)
+        self.alpha_label.config(font=font.Font(slant="italic"))
+        self.alpha_toggle = make_img_button(self.options_frame, "", 20, 100, OVERLAY_COLOURS[0], "black", 72, 26+19, lambda: self._toggle_window_opaque(True), 0, POWER_ICON_DIR)
+
 
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
