@@ -2,10 +2,13 @@
 # GUI
 APP_TITLE = "Dyslexia Assistive Application"
 HOME_DIMENSIONS = "600x75"
+OVERLAY_DIMENSIONS = "1200x1200"
 
 # Directories
 APP_ICON_DIR = "res/icons/ico_48.ico"
 HOME_ICON_DIR = "res/icons/home_48.png"
+OVERLAY_ICON_DIR = "res/icons/test_48.png"
+POWER_ICON_DIR = "res/icons/power_24.png"
 
 # Colours
 TOOLBAR_BG = "#1c5a8a"
@@ -26,3 +29,4 @@ OVERLAY_COLOURS = ["#63a6ba", "#1a647a", "#c7a567", "#bf7e08", "#75b072", "#3361
 
 # labels
 HOME_NOTICE = "Welcome! Select a tool to get started."
+COLOUR_OVERLAY_NOTICE = "Colour Overlay - Place the transparent window over text to tint the colour and make reading easier."
