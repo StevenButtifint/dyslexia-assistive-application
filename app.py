@@ -65,6 +65,15 @@ class Window:
                 self.window.attributes('-alpha', self.alpha_scale.get() / 100)
                 self.alpha_toggle.config(bg="green")
                 self.window_opaque = False
+            else:
+                self.alpha_toggle.config(bg=self.options_frame["background"])
+                self.window.attributes('-alpha', 1)
+                self.window_opaque = True
+        else:
+            self.alpha_label.config(text="Opacity: "+str(self.alpha_scale.get())+"%")
+            if not self.window_opaque:
+                self.window.attributes('-alpha', self.alpha_scale.get() / 100)
+
 
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
