@@ -10,6 +10,7 @@ class Window:
         self.window.geometry(HOME_DIMENSIONS)
         self.window.title(APP_TITLE)
         self.window.iconbitmap(self.resource_path(APP_ICON_DIR))
+        self.window_opaque = True
         self._create_tool_bar()
 
     def _create_tool_bar(self):
@@ -58,6 +59,12 @@ class Window:
         if self.window_opaque:
             self.alpha_toggle.config(bg=colour)
 
+    def _toggle_window_opaque(self, is_toggle):
+        if is_toggle:
+            if self.window_opaque:
+                self.window.attributes('-alpha', self.alpha_scale.get() / 100)
+                self.alpha_toggle.config(bg="green")
+                self.window_opaque = False
 
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
