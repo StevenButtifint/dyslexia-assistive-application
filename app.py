@@ -48,6 +48,16 @@ class Window:
 
         self.window.geometry(OVERLAY_DIMENSIONS)
 
+    def _set_overlay_colour(self, index):
+        colour = OVERLAY_COLOURS[index]
+        self.options_frame.config(bg=colour)
+        self.alpha_scale.config(bg=colour, troughcolor=colour)
+        self.alpha_label.config(bg=colour)
+        self.toggle_label.config(bg=colour)
+        self.colours_label.config(bg=colour)
+        if self.window_opaque:
+            self.alpha_toggle.config(bg=colour)
+
 
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
