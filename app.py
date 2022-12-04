@@ -17,6 +17,8 @@ class Window:
         toolbar_frame = make_static_frame(self.window, TOOLBAR_BG, 2000, 85, 0, 0, "nw")
         self.home_tool = make_tool_button(toolbar_frame, 50, 50, 1, 1, lambda: self._create_home_page(), HOME_ICON_DIR)
         self.colour_overlay = make_tool_button(toolbar_frame, 50, 50, 55, 1, lambda: self._colour_overlay(), OVERLAY_ICON_DIR)
+        self.notice_frame = make_static_frame(toolbar_frame, NOTICE_BG, 2000, 25, 0, 50, "nw")
+        self.notice_label = make_label(self.notice_frame, HOME_NOTICE, NOTICE_BG, NOTICE_TEXT, 5, 0, "nw", 12)
         self.tool_selected = self.home_tool
         self.home_tool.config(bg=TOOL_BG_CLICKED)
 
