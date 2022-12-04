@@ -26,6 +26,7 @@ GREYSCALE_COLOURS = ["#000000", "#333333", "#666666", "#999999", "#cccccc", "#ee
 OVERLAY_COLOURS = ["#63a6ba", "#1a647a", "#c7a567", "#bf7e08", "#75b072", "#336130",
                    "red", "red", "red", "red", "red", "red"]
 
+CUSTOM_FONTS = ["OpenDyslexic-Regular"]
 
 # labels
 HOME_NOTICE = "Welcome! Select a tool to get started."
