@@ -92,6 +92,9 @@ class Window:
         self.text_box_frame = make_static_frame(self.options_frame, "red", 1560, 800, 20, 100, "nw")
         self.text_box = make_scaling_text_box(self.text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, text_font)
 
+        make_img_button(self.options_frame, "", 48, 48, MAIN_BG, "black", 46, 40+19, lambda: self._set_text_box_size(2), 0, ZOOM_IN_ICON_DIR)
+        make_img_button(self.options_frame, "", 48, 48, MAIN_BG, "black", 102, 40+19, lambda: self._set_text_box_size(-2), 0, ZOOM_OUT_ICON_DIR)
+
 
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
