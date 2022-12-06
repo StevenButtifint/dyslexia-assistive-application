@@ -95,6 +95,14 @@ class Window:
         make_img_button(self.options_frame, "", 48, 48, MAIN_BG, "black", 46, 40+19, lambda: self._set_text_box_size(2), 0, ZOOM_IN_ICON_DIR)
         make_img_button(self.options_frame, "", 48, 48, MAIN_BG, "black", 102, 40+19, lambda: self._set_text_box_size(-2), 0, ZOOM_OUT_ICON_DIR)
 
+        text_size_label = make_label(self.options_frame, "Text size", MAIN_BG, "black", 72, 20, "center", 12)
+        text_size_label.config(font=font.Font(slant="italic"))
+
+        text_font_label = make_label(self.options_frame, "Text font", MAIN_BG, "black", 240, 20, "center", 12)
+        text_font_label.config(font=font.Font(slant="italic"))
+
+        make_option_menu(self.options_frame, CUSTOM_FONTS, 0, 240, 47, "center", MAIN_BG)
+
 
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
