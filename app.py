@@ -78,6 +78,13 @@ class Window:
             if not self.window_opaque:
                 self.window.attributes('-alpha', self.alpha_scale.get() / 100)
 
+    def _reading_editor(self):
+        self._tool_selected(self.reading_editor)
+        self.notice_label.config(text=READING_EDITOR_NOTICE)
+        self.options_frame.destroy()
+        self.options_frame = make_static_frame(self.window, MAIN_BG, 1600, 1000, 0, 75, "nw")
+        self.window.geometry(READING_DIMENSIONS)
+
 
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
