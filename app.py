@@ -113,6 +113,16 @@ class Window:
         text_colour_label = make_label(self.options_frame, "Text colour", MAIN_BG, "black", 390, 20, "center", 12)
         text_colour_label.config(font=font.Font(slant="italic"))
 
+        self.colour_buttons = []
+        self.selected_bg_colour = 0
+
+        for x in range(0, len(OVERLAY_COLOURS), 2):
+            self.colour_buttons.append(make_button(self.options_frame, "", 11, 16, OVERLAY_COLOURS[x], "black", 450+(15*x)+18, 26+19, lambda c=x: self._set_text_box_colour(c), 1))
+            self.colour_buttons.append(make_button(self.options_frame, "", 11, 16, OVERLAY_COLOURS[x+1], "black", 450+(15*x)+18, 53+19, lambda c=x: self._set_text_box_colour(c+1), 1))
+
+        bg_colour_label = make_label(self.options_frame, "Background colour", MAIN_BG, "black", 545, 20, "center", 12)
+        bg_colour_label.config(font=font.Font(slant="italic"))
+
 
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
