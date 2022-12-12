@@ -124,6 +124,16 @@ class Window:
         bg_colour_label.config(font=font.Font(slant="italic"))
 
 
+    def _exit(self):
+        self._tool_selected(self.exit)
+        self.notice_label.config(text=" "*45 + EXIT_NOTICE)
+        self.options_frame.destroy()
+        self.options_frame = make_static_frame(self.window, NOTICE_BG, 1600, 1000, 0, 75, "nw")
+        self.window.geometry(EXIT_DIMENSIONS)
+        make_button(self.options_frame, "Yes", 1, 4, MAIN_BG, "black", 250, 25, lambda: quit(), 16)
+        make_button(self.options_frame, "No", 1, 4, MAIN_BG, "black", 340, 25, lambda: self._cancel_exit(), 16)
+
+
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
         if self.tool_selected is not tool_button:
