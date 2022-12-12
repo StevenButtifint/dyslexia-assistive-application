@@ -133,6 +133,10 @@ class Window:
         make_button(self.options_frame, "Yes", 1, 4, MAIN_BG, "black", 250, 25, lambda: quit(), 16)
         make_button(self.options_frame, "No", 1, 4, MAIN_BG, "black", 340, 25, lambda: self._cancel_exit(), 16)
 
+    def _cancel_exit(self):
+        self.home_tool.config(bg=TOOL_BG_CLICKED)
+        self._create_home_page()
+
 
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
