@@ -3,11 +3,13 @@
 APP_TITLE = "Dyslexia Assistive Application"
 HOME_DIMENSIONS = "600x75"
 OVERLAY_DIMENSIONS = "1200x1200"
+EXIT_DIMENSIONS = "597x135"
 
 # Directories
 APP_ICON_DIR = "res/icons/ico_48.ico"
 HOME_ICON_DIR = "res/icons/home_48.png"
 OVERLAY_ICON_DIR = "res/icons/test_48.png"
+EXIT_ICON_DIR = "res/icons/exit_48.png"
 POWER_ICON_DIR = "res/icons/power_24.png"
 
 # Colours
@@ -31,3 +33,4 @@ CUSTOM_FONTS = ["OpenDyslexic-Regular"]
 # labels
 HOME_NOTICE = "Welcome! Select a tool to get started."
 COLOUR_OVERLAY_NOTICE = "Colour Overlay - Place the transparent window over text to tint the colour and make reading easier."
+EXIT_NOTICE = "Are you sure you want to quit?"
