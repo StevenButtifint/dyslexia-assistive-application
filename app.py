@@ -126,6 +126,14 @@ class Window:
         bg_colour_label.config(font=font.Font(slant="italic"))
 
 
+
+    def _info(self):
+        self._tool_selected(self.info)
+        self.notice_label.config(text=INFO_NOTICE)
+        self.options_frame.destroy()
+        self.options_frame = make_static_frame(self.window, MAIN_BG, 1600, 1000, 0, 75, "nw")
+        self.window.geometry(INFO_DIMENSIONS)
+
     def _exit(self):
         self._tool_selected(self.exit)
         self.notice_label.config(text=" "*45 + EXIT_NOTICE)
