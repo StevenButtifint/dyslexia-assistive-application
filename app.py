@@ -149,6 +149,9 @@ class Window:
         self.home_tool.config(bg=TOOL_BG_CLICKED)
         self._create_home_page()
 
+    def _set_text_box_size(self, increment):
+        self.text_box_size = self.text_box_size+increment
+        self.text_box.config(font=("OpenDyslexic-Regular", self.text_box_size))
 
     def _set_text_box_colour(self, colour):
         self.colour_buttons[self.selected_bg_colour].config(borderwidth=1)
