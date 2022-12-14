@@ -150,6 +150,11 @@ class Window:
         self._create_home_page()
 
 
+    def _set_text_colour(self, box, colour):
+        self.greyscale_buttons[self.selected_fg_colour].config(borderwidth=2)
+        self.selected_fg_colour = colour
+        box.config(fg=GREYSCALE_COLOURS[colour])
+
     def _tool_selected(self, tool_button):
         self.window.attributes('-alpha', 1)
         if self.tool_selected is not tool_button:
