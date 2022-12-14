@@ -150,6 +150,11 @@ class Window:
         self._create_home_page()
 
 
+    def _set_text_box_colour(self, colour):
+        self.colour_buttons[self.selected_bg_colour].config(borderwidth=1)
+        self.selected_bg_colour = colour
+        self.text_box.config(bg=OVERLAY_COLOURS[colour])
+
     def _set_text_colour(self, box, colour):
         self.greyscale_buttons[self.selected_fg_colour].config(borderwidth=2)
         self.selected_fg_colour = colour
