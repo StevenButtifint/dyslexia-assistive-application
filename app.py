@@ -128,6 +128,14 @@ class Window:
         bg_colour_label.config(font=font.Font(slant="italic"))
 
 
+    def _spellchecker(self):
+        self._tool_selected(self.spellchecker)
+        self.notice_label.config(text=SPELLCHECKER_NOTICE)
+        self.options_frame.destroy()
+        self.options_frame = make_static_frame(self.window, MAIN_BG, 1600, 1000, 0, 75, "nw")
+        self.window.geometry(SPELLCHECKER_DIMENSIONS)
+
+
 
     def _info(self):
         self._tool_selected(self.info)
