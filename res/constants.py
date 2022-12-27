@@ -17,7 +17,13 @@ READING_ICON_DIR = "res/icons/reader_48.png"
 SPELLCHECKER_ICON_DIR = "res/icons/spellchecker_48.png"
 INFO_ICON_DIR = "res/icons/info_w_48.png"
 EXIT_ICON_DIR = "res/icons/exit_48.png"
+
 POWER_ICON_DIR = "res/icons/power_24.png"
+ZOOM_IN_ICON_DIR = "res/icons/zoom-in_48.png"
+ZOOM_OUT_ICON_DIR = "res/icons/zoom-out_48.png"
+
+DYSLEXIC_FONT_DIR = "res/fonts/OpenDyslexic-Regular.otf"
+
 
 # Colours
 TOOLBAR_BG = "#1c5a8a"
