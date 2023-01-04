@@ -21,6 +21,7 @@ class Window:
         self.reading_editor = make_tool_button(toolbar_frame, 50, 50, 109, 1, lambda: self._reading_editor(), READING_ICON_DIR)
         self.spellchecker = make_tool_button(toolbar_frame, 50, 50, 163, 1, lambda: self._spellchecker(), SPELLCHECKER_ICON_DIR)
 
+        self.text_reader = make_tool_button(toolbar_frame, 50, 50, 217, 1, lambda: self._text_reader(), TTS_ICON_DIR)  # text to speech
 
         self.info = make_tool_button(toolbar_frame, 50, 50, 487, 1, lambda: self._info(), INFO_ICON_DIR)
         self.exit = make_tool_button(toolbar_frame, 50, 50, 544, 1, lambda: self._exit(), EXIT_ICON_DIR)
