@@ -1,4 +1,6 @@
 import pyglet
+import os
+from gtts import gTTS
 
 from res.constants import *
 from res.interface import *
