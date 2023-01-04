@@ -15,6 +15,7 @@ HOME_ICON_DIR = "res/icons/home_48.png"
 OVERLAY_ICON_DIR = "res/icons/test_48.png"
 READING_ICON_DIR = "res/icons/reader_48.png"
 SPELLCHECKER_ICON_DIR = "res/icons/spellchecker_48.png"
+TTS_ICON_DIR = "res/icons/text_to_speach_32.png"
 INFO_ICON_DIR = "res/icons/info_w_48.png"
 EXIT_ICON_DIR = "res/icons/exit_48.png"
 
