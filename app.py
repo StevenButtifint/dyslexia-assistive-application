@@ -144,10 +144,10 @@ class Window:
 
     def _text_speaker(self):
         self._tool_selected(self.text_reader)
-        self.notice_label.config(text=TEXT_READER_NOTICE)
+        self.notice_label.config(text=TEXT_SPEAKER_NOTICE)
         self.options_frame.destroy()
         self.options_frame = make_static_frame(self.window, MAIN_BG, 1600, 1000, 0, 75, "nw")
-        self.window.geometry(TEXT_READER_DIMENSIONS)
+        self.window.geometry(TEXT_SPEAKER_DIMENSIONS)
 
 
 
