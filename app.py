@@ -39,7 +39,7 @@ class Window:
         self.notice_label.config(text=HOME_NOTICE)
         self.window.geometry(HOME_DIMENSIONS)
         self.options_frame.destroy()
-        self.options_frame = make_static_frame(self.window, "red", 600, 25, 0, 75, "nw")
+        self.options_frame = make_static_frame(self.window, MAIN_BG, 600, 25, 0, 75, "nw")
 
     def _colour_overlay(self):
         self._tool_selected(self.colour_overlay)
