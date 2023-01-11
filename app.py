@@ -155,6 +155,11 @@ class Window:
         text_box = make_scaling_text_box(self.text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, text_font)
 
 
+    @staticmethod
+    def _speak_text(text):
+        audio = gTTS(text=text, lang="en", slow=False)
+        audio.save("tts.mp3")
+        os.system("start tts.mp3")
 
     def _info(self):
         self._tool_selected(self.info)
