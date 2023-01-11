@@ -149,6 +149,11 @@ class Window:
         self.options_frame = make_static_frame(self.window, MAIN_BG, 1600, 1000, 0, 75, "nw")
         self.window.geometry(TEXT_SPEAKER_DIMENSIONS)
 
+        pyglet.font.add_file(DYSLEXIC_FONT_DIR)
+        text_font = ("OpenDyslexic-Regular", 18)
+        self.text_box_frame = make_static_frame(self.options_frame, MAIN_BG, 560, 600, 18, 100, "nw")
+        text_box = make_scaling_text_box(self.text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, text_font)
+
 
 
     def _info(self):
