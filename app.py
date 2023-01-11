@@ -155,6 +155,8 @@ class Window:
         text_box = make_scaling_text_box(self.text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, text_font)
 
 
+        make_img_button(self.options_frame, "", 64, 64, MAIN_BG, "black", 280, 760, lambda: self._speak_text(text_box.get("1.0", tk.END)), 0, VOICE_ICON_DIR)
+
     @staticmethod
     def _speak_text(text):
         audio = gTTS(text=text, lang="en", slow=False)
