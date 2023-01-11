@@ -48,7 +48,7 @@ CUSTOM_FONTS = ["OpenDyslexic-Regular"]
 # labels
 HOME_NOTICE = "Welcome! Select a tool to get started."
 COLOUR_OVERLAY_NOTICE = "Colour Overlay - Place the transparent window over text to tint the colour and make reading easier."
-READING_EDITOR_NOTICE = "Text Editor - Edit or type text using custom colours to improve comprehension."
+READING_EDITOR_NOTICE = "Reading Editor - Edit or type text using custom colours to improve comprehension."
 SPELLCHECKER_NOTICE = "Spellchecker - Check spelling of words in text."
 TEXT_SPEAKER_NOTICE = "Text Speaker - Reads text aloud."
 INFO_NOTICE = "Info - Information about the tools along with icon image credits can be found below."
