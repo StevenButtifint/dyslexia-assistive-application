@@ -14,6 +14,9 @@ class Window:
         self.window.title(APP_TITLE)
         self.window.iconbitmap(self.resource_path(APP_ICON_DIR))
         self.window_opaque = True
+        pyglet.font.add_file(DYSLEXIC_FONT_DIR)
+        self.text_font = ("OpenDyslexic-Regular", self.text_box_size)
+
         self._create_tool_bar()
 
     def _create_tool_bar(self):
@@ -96,9 +99,7 @@ class Window:
         self.options_frame = make_static_frame(self.window, MAIN_BG, 1600, 1000, 0, 75, "nw")
         self.window.geometry(READING_DIMENSIONS)
 
-        pyglet.font.add_file(DYSLEXIC_FONT_DIR)
         self.text_box_size = 20
-        text_font = ("OpenDyslexic-Regular", self.text_box_size)
         self.text_box_frame = make_static_frame(self.options_frame, "red", 1560, 800, 20, 100, "nw")
         self.text_box = make_scaling_text_box(self.text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, text_font)
 
@@ -149,8 +150,6 @@ class Window:
         self.options_frame = make_static_frame(self.window, MAIN_BG, 1600, 1000, 0, 75, "nw")
         self.window.geometry(TEXT_SPEAKER_DIMENSIONS)
 
-        pyglet.font.add_file(DYSLEXIC_FONT_DIR)
-        text_font = ("OpenDyslexic-Regular", 18)
         self.text_box_frame = make_static_frame(self.options_frame, MAIN_BG, 560, 600, 18, 100, "nw")
         text_box = make_scaling_text_box(self.text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, text_font)
 
