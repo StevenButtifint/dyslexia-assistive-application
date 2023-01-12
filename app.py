@@ -14,6 +14,8 @@ class Window:
         self.window.title(APP_TITLE)
         self.window.iconbitmap(self.resource_path(APP_ICON_DIR))
         self.window_opaque = True
+
+        self.text_box_size = 20
         pyglet.font.add_file(DYSLEXIC_FONT_DIR)
         self.text_font = ("OpenDyslexic-Regular", self.text_box_size)
 
@@ -99,7 +101,6 @@ class Window:
         self.options_frame = make_static_frame(self.window, MAIN_BG, 1600, 1000, 0, 75, "nw")
         self.window.geometry(READING_DIMENSIONS)
 
-        self.text_box_size = 20
         self.text_box_frame = make_static_frame(self.options_frame, "red", 1560, 800, 20, 100, "nw")
         self.text_box = make_scaling_text_box(self.text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, text_font)
 
