@@ -40,7 +40,7 @@ NOTICE_TEXT = "black"
 
 GREYSCALE_COLOURS = ["#000000", "#333333", "#666666", "#999999", "#cccccc", "#eeeeee"]
 OVERLAY_COLOURS = ["#63a6ba", "#1a647a", "#c7a567", "#bf7e08", "#75b072", "#336130",
-                   "red", "red", "red", "red", "red", "red"]
+                   "#6763ba", "#4842bd", "#ba63a7", "#bd42b1", "#ba636f", "#bd4242"]
 
 CUSTOM_FONTS = ["OpenDyslexic-Regular"]
 
