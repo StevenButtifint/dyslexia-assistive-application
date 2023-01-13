@@ -104,8 +104,7 @@ class Window:
         self.text_box_frame = make_static_frame(self.options_frame, MAIN_BG, 1560, 800, 20, 100, "nw")
         self.text_box = make_scaling_text_box(self.text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, self.text_font)
 
-        make_img_button(self.options_frame, "", 48, 48, MAIN_BG, "black", 46, 40+19, lambda: self._set_text_box_size(2), 0, ZOOM_IN_ICON_DIR)
-        make_img_button(self.options_frame, "", 48, 48, MAIN_BG, "black", 102, 40+19, lambda: self._set_text_box_size(-2), 0, ZOOM_OUT_ICON_DIR)
+        self._create_textbox_size_options()
 
         text_size_label = make_label(self.options_frame, "Text size", MAIN_BG, "black", 72, 20, "center", 12)
         text_size_label.config(font=font.Font(slant="italic"))
