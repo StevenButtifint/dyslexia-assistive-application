@@ -134,6 +134,11 @@ class Window:
         bg_colour_label = make_label(self.options_frame, "Background colour", MAIN_BG, "black", 545, 20, "center", 12)
         bg_colour_label.config(font=font.Font(slant="italic"))
 
+    def _create_textbox_size_options(self):
+        make_img_button(self.options_frame, "", 48, 48, MAIN_BG, "black", 46, 40+19, lambda: self._set_text_box_size(2), 0, ZOOM_IN_ICON_DIR)
+        make_img_button(self.options_frame, "", 48, 48, MAIN_BG, "black", 102, 40+19, lambda: self._set_text_box_size(-2), 0, ZOOM_OUT_ICON_DIR)
+        text_size_label = make_label(self.options_frame, "Text size", MAIN_BG, "black", 72, 20, "center", 12)
+        text_size_label.config(font=font.Font(slant="italic"))
 
     def _spellchecker(self):
         self._tool_selected(self.spellchecker)
