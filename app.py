@@ -155,11 +155,11 @@ class Window:
         self.options_frame = make_static_frame(self.window, MAIN_BG, 1600, 1000, 0, 75, "nw")
         self.window.geometry(TEXT_SPEAKER_DIMENSIONS)
 
-        self.text_box_frame = make_static_frame(self.options_frame, MAIN_BG, 560, 600, 18, 100, "nw")
-        text_box = make_scaling_text_box(self.text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, text_font)
+        text_box_frame = make_static_frame(self.options_frame, MAIN_BG, 560, 600, 18, 100, "nw")
+        self.text_box = make_scaling_text_box(text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, self.text_font)
 
 
-        make_img_button(self.options_frame, "", 64, 64, MAIN_BG, "black", 280, 760, lambda: self._speak_text(text_box.get("1.0", tk.END)), 0, VOICE_ICON_DIR)
+        make_img_button(self.options_frame, "", 64, 64, MAIN_BG, "black", 280, 760, lambda: self._speak_text(self.text_box.get("1.0", tk.END)), 0, VOICE_ICON_DIR)
 
     @staticmethod
     def _speak_text(text):
