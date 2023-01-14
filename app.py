@@ -109,29 +109,29 @@ class Window:
         text_size_label = make_label(self.options_frame, "Text size", MAIN_BG, "black", 72, 20, "center", 12)
         text_size_label.config(font=font.Font(slant="italic"))
 
-        text_font_label = make_label(self.options_frame, "Text font", MAIN_BG, "black", 240, 20, "center", 12)
+        text_font_label = make_label(self.options_frame, "Text font", MAIN_BG, "black", 532, 20, "center", 12)
         text_font_label.config(font=font.Font(slant="italic"))
 
-        make_option_menu(self.options_frame, CUSTOM_FONTS, 0, 240, 47, "center", MAIN_BG)
+        make_option_menu(self.options_frame, CUSTOM_FONTS, 0, 532, 47, "center", MAIN_BG)
 
         self.greyscale_buttons = []
         self.selected_fg_colour = 0
 
         for x in range(0, len(GREYSCALE_COLOURS), 2):
-            self.greyscale_buttons.append(make_button(self.options_frame, "", 11, 16, GREYSCALE_COLOURS[x], "black", 360+(15*x), 26+19, lambda c=x: self._set_text_colour(self.text_box, c), 1))
-            self.greyscale_buttons.append(make_button(self.options_frame, "", 11, 16, GREYSCALE_COLOURS[x+1], "black", 360+(15*x), 53+19, lambda c=x: self._set_text_colour(self.text_box, c+1), 1))
+            self.greyscale_buttons.append(make_button(self.options_frame, "", 11, 16, GREYSCALE_COLOURS[x], "black", 160+(15*x), 26+19, lambda c=x: self._set_text_colour(self.text_box, c), 1))
+            self.greyscale_buttons.append(make_button(self.options_frame, "", 11, 16, GREYSCALE_COLOURS[x+1], "black", 160+(15*x), 53+19, lambda c=x: self._set_text_colour(self.text_box, c+1), 1))
 
-        text_colour_label = make_label(self.options_frame, "Text colour", MAIN_BG, "black", 390, 20, "center", 12)
+        text_colour_label = make_label(self.options_frame, "Text colour", MAIN_BG, "black", 190, 20, "center", 12)
         text_colour_label.config(font=font.Font(slant="italic"))
 
         self.colour_buttons = []
         self.selected_bg_colour = 0
 
         for x in range(0, len(OVERLAY_COLOURS), 2):
-            self.colour_buttons.append(make_button(self.options_frame, "", 11, 16, OVERLAY_COLOURS[x], "black", 450+(15*x)+18, 26+19, lambda c=x: self._set_text_box_colour(c), 1))
-            self.colour_buttons.append(make_button(self.options_frame, "", 11, 16, OVERLAY_COLOURS[x+1], "black", 450+(15*x)+18, 53+19, lambda c=x: self._set_text_box_colour(c+1), 1))
+            self.colour_buttons.append(make_button(self.options_frame, "", 11, 16, OVERLAY_COLOURS[x], "black", 250+(15*x)+18, 26+19, lambda c=x: self._set_text_box_colour(c), 1))
+            self.colour_buttons.append(make_button(self.options_frame, "", 11, 16, OVERLAY_COLOURS[x+1], "black", 250+(15*x)+18, 53+19, lambda c=x: self._set_text_box_colour(c+1), 1))
 
-        bg_colour_label = make_label(self.options_frame, "Background colour", MAIN_BG, "black", 545, 20, "center", 12)
+        bg_colour_label = make_label(self.options_frame, "Background colour", MAIN_BG, "black", 345, 20, "center", 12)
         bg_colour_label.config(font=font.Font(slant="italic"))
 
     def _create_textbox_size_options(self):
