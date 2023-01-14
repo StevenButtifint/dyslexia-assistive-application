@@ -112,6 +112,8 @@ class Window:
 
         make_option_menu(self.options_frame, CUSTOM_FONTS, 0, 532, 47, "center", MAIN_BG)
 
+
+    def _create_textbox_fg_options(self):
         self.greyscale_buttons = []
         self.selected_fg_colour = 0
 
@@ -122,6 +124,7 @@ class Window:
         text_colour_label = make_label(self.options_frame, "Text colour", MAIN_BG, "black", 190, 20, "center", 12)
         text_colour_label.config(font=font.Font(slant="italic"))
 
+    def _create_textbox_bg_options(self):
         self.colour_buttons = []
         self.selected_bg_colour = 0
 
@@ -142,7 +145,7 @@ class Window:
         self._tool_selected(self.spellchecker)
         self.notice_label.config(text=SPELLCHECKER_NOTICE)
         self.options_frame.destroy()
-        self.options_frame = make_static_frame(self.window, MAIN_BG, 1600, 1000, 0, 75, "nw")
+        self.options_frame = make_static_frame(self.window, MAIN_BG, 800, 1000, 0, 75, "nw")
         self.window.geometry(SPELLCHECKER_DIMENSIONS)
 
 
