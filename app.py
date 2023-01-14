@@ -106,8 +106,6 @@ class Window:
 
         self._create_textbox_size_options()
 
-        text_size_label = make_label(self.options_frame, "Text size", MAIN_BG, "black", 72, 20, "center", 12)
-        text_size_label.config(font=font.Font(slant="italic"))
 
         text_font_label = make_label(self.options_frame, "Text font", MAIN_BG, "black", 532, 20, "center", 12)
         text_font_label.config(font=font.Font(slant="italic"))
