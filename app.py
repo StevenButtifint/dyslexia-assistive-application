@@ -150,6 +150,9 @@ class Window:
         self.options_frame = make_static_frame(self.window, MAIN_BG, 800, 1000, 0, 75, "nw")
         self.window.geometry(SPELLCHECKER_DIMENSIONS)
 
+        text_box_frame = make_static_frame(self.options_frame, MAIN_BG, 560, 400, 18, 100, "nw")
+        self.text_box = make_scaling_text_box(text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, self.text_font)
+
 
     def _text_speaker(self):
         self._tool_selected(self.text_reader)
