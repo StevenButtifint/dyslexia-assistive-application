@@ -106,6 +106,7 @@ class Window:
 
         self._create_textbox_size_options()
         self._create_textbox_fg_options()
+        self._create_textbox_bg_options()
 
 
         text_font_label = make_label(self.options_frame, "Text font", MAIN_BG, "black", 532, 20, "center", 12)
