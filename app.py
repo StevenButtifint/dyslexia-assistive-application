@@ -105,6 +105,7 @@ class Window:
         self.text_box = make_scaling_text_box(self.text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, self.text_font)
 
         self._create_textbox_size_options()
+        self._create_textbox_fg_options()
 
 
         text_font_label = make_label(self.options_frame, "Text font", MAIN_BG, "black", 532, 20, "center", 12)
