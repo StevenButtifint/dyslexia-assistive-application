@@ -155,6 +155,7 @@ class Window:
 
         self._create_textbox_size_options()
         self._create_textbox_fg_options()
+        self._create_textbox_bg_options()
 
     def _text_speaker(self):
         self._tool_selected(self.text_reader)
