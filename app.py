@@ -180,6 +180,19 @@ class Window:
         audio.save("tts.mp3")
         os.system("start tts.mp3")
 
+    def _voice_to_text(self):
+        r = sr.Recognizer()
+
+        with sr.Microphone() as source:
+            print("Talk")
+            audio_text = r.listen(source)
+            print("Time over, thanks")
+
+        try:
+            print("Text: " + r.recognize_google(audio_text))
+        except:
+            print("Sorry, I did not get that")
+
     def _info(self):
         self._tool_selected(self.info)
         self.notice_label.config(text=INFO_NOTICE)
