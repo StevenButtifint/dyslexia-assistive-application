@@ -154,6 +154,7 @@ class Window:
         self.text_box = make_scaling_text_box(text_box_frame, OVERLAY_COLOURS[0], "black", 0, 0, self.text_font)
 
         self._create_textbox_size_options()
+        self._create_textbox_fg_options()
 
     def _text_speaker(self):
         self._tool_selected(self.text_reader)
