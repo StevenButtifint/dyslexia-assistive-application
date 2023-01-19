@@ -173,6 +173,14 @@ class Window:
         word_set = no_punctuation.split()
         with open(self.resource_path(ENG_DICT_DIR)) as f:
             dict_words = f.read().splitlines()
+        unknown_words = []
+
+        for word in word_set:
+            print(word)
+            print(word_set[0:10])
+            if word not in dict_words:
+                unknown_words.append(word)
+
     def _text_speaker(self):
         self._tool_selected(self.text_reader)
         self.notice_label.config(text=TEXT_SPEAKER_NOTICE)
