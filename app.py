@@ -181,6 +181,9 @@ class Window:
             if word not in dict_words:
                 unknown_words.append(word)
 
+        result_listbox.delete(0, tk.END)
+        result_listbox.insert(tk.END, *unknown_words)
+
     def _text_speaker(self):
         self._tool_selected(self.text_reader)
         self.notice_label.config(text=TEXT_SPEAKER_NOTICE)
