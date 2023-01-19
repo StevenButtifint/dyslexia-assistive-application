@@ -161,6 +161,11 @@ class Window:
         text_font_label.config(font=font.Font(slant="italic"))
         make_option_menu(self.options_frame, LANGUAGES, 0, 492, 47, "center", MAIN_BG)
 
+        result_listbox = make_listbox(self.options_frame, MAIN_BG, "black", 12, 92, 18, 600)
+
+        output_label = make_label(self.options_frame, "Unknown words will be shown below", MAIN_BG, "white", 16, 585, "w", 12)
+        output_label.config(font=font.Font(slant="italic"))
+
     def _text_speaker(self):
         self._tool_selected(self.text_reader)
         self.notice_label.config(text=TEXT_SPEAKER_NOTICE)
