@@ -166,6 +166,7 @@ class Window:
         output_label = make_label(self.options_frame, "Unknown words will be shown below", MAIN_BG, "white", 16, 585, "w", 12)
         output_label.config(font=font.Font(slant="italic"))
 
+        make_button(self.options_frame, "Check Spelling", 1, 13, MAIN_BG, "black", 295, 540, lambda: self._check_spelling(result_listbox, self.text_box.get("1.0", tk.END)), 14)
     def _text_speaker(self):
         self._tool_selected(self.text_reader)
         self.notice_label.config(text=TEXT_SPEAKER_NOTICE)
