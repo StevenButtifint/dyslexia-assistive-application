@@ -1,7 +1,10 @@
 # Dyslexia Assistive Application
 
+### Toolbar
+![](https://github.com/stevenbuttifint/dyslexia-assistive-application/blob/main/res/demo/image_1.JPG?raw=true)
+
 ### Demo Videos
-TODO ![](?raw=true)
+![](https://github.com/stevenbuttifint/dyslexia-assistive-application/blob/main/res/demo/demo_1.gif?raw=true)
 
 ---
 
