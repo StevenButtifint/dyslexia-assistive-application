@@ -143,6 +143,11 @@ class Window:
         text_size_label = make_label(self.options_frame, "Text size", MAIN_BG, "black", 72, 20, "center", 12)
         text_size_label.config(font=font.Font(slant="italic"))
 
+    def _create_language_options(self):
+        text_font_label = make_label(self.options_frame, "Language", MAIN_BG, "black", 492, 20, "center", 12)
+        text_font_label.config(font=font.Font(slant="italic"))
+        make_option_menu(self.options_frame, LANGUAGES, 0, 492, 47, "center", MAIN_BG)
+
     def _spellchecker(self):
         self._tool_selected(self.spellchecker)
         self.notice_label.config(text=SPELLCHECKER_NOTICE)
