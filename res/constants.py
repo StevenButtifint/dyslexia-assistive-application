@@ -11,13 +11,13 @@ EXIT_DIMENSIONS = "597x135"
 
 # Directories
 APP_ICON_DIR = "res/icons/ico_48.ico"
-HOME_ICON_DIR = "res/icons/home_48.png"
+HOME_ICON_DIR = "res/icons/home_64.png"
 OVERLAY_ICON_DIR = "res/icons/test_48.png"
 READING_ICON_DIR = "res/icons/reader_48.png"
-SPELLCHECKER_ICON_DIR = "res/icons/spellchecker_48.png"
-TTS_ICON_DIR = "res/icons/text_to_speech_32.png"
-INFO_ICON_DIR = "res/icons/info_w_48.png"
-EXIT_ICON_DIR = "res/icons/exit_48.png"
+SPELLCHECKER_ICON_DIR = "res/icons/spellchecker_64.png"
+TTS_ICON_DIR = "res/icons/text_to_speech_64.png"
+INFO_ICON_DIR = "res/icons/info_64.png"
+EXIT_ICON_DIR = "res/icons/exit_64.png"
 
 POWER_ICON_DIR = "res/icons/power_24.png"
 ZOOM_IN_ICON_DIR = "res/icons/zoom-in_48.png"
