@@ -162,9 +162,7 @@ class Window:
         self._create_textbox_fg_options()
         self._create_textbox_bg_options()
 
-        text_font_label = make_label(self.options_frame, "Language", MAIN_BG, "black", 492, 20, "center", 12)
-        text_font_label.config(font=font.Font(slant="italic"))
-        make_option_menu(self.options_frame, LANGUAGES, 0, 492, 47, "center", MAIN_BG)
+        self._create_language_options()
 
         result_listbox = make_listbox(self.options_frame, MAIN_BG, "black", 12, 92, 18, 600)
 
