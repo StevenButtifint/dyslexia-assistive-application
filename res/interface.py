@@ -13,6 +13,12 @@ def make_static_frame(frame, bg, w, h, x, y, anchor):
     return new_frame
 
 
+def make_frame(frame, bg, relw, relh, relx, rely, anchor):
+    new_frame = tk.Frame(frame, bg=bg)
+    new_frame.place(relw=relw, relh=relh, relx=relx, rely=rely, anchor=anchor)
+    return new_frame
+
+
 def make_label(frame, text, bg, fg, x, y, anchor, size):
     label = tk.Label(frame, text=text, bg=bg, fg=fg)
     label.place(x=x, y=y, anchor=anchor)
