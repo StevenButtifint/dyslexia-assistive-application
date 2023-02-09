@@ -12,6 +12,7 @@
 - [Description](#description)
 - [How It Works](#how-it-works)
 - [What I Learned](#what-i-learned)
+- [References](#references)
 
 ---
 
@@ -31,6 +32,9 @@ The tools assist the user when completing other reading or writing tasks.
 ---
 
 ### What I Learned
+- TO DO
+
+### References
 - TO DO
 
 [Back To The Top](#dyslexia-assistive-application)
