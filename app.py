@@ -200,6 +200,7 @@ class Window:
         self._create_textbox_size_options()
         self._create_textbox_fg_options()
         self._create_textbox_bg_options()
+        self._create_language_options()
 
         make_img_button(self.options_frame, "", 64, 64, MAIN_BG, "black", 280, 775, lambda: self._speak_text(self.text_box.get("1.0", tk.END)), 0, VOICE_ICON_DIR)
 
