@@ -100,6 +100,12 @@ def make_button(frame, text, height, width, bg, fg, x, y, command, size):
     return new_button
 
 
+def make_listbox(frame, bg, fg, height, width, x, y):
+    listbox = tk.Listbox(frame, bg=bg, fg=fg, height=height, width=width, bd=0)
+    listbox.place(x=x, y=y)
+    return listbox
+
+
 def makeScale(frame, min_val, max_val, x, y, height, width, bg, fg, command):
     scale = tk.Scale(frame, orient='horizontal', from_=min_val, to=max_val, width=height, length=width, bg=bg, fg=fg)
     scale.config(highlightthickness=0, command=command)
