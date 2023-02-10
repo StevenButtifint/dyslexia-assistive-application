@@ -223,6 +223,14 @@ class Window:
         except:
             print("Sorry, I did not get that")
 
+
+    def _user_dictionaries(self):
+        self._tool_selected(self.user_dictionaries)
+        self.notice_label.config(text=DICTIONARY_NOTICE)
+        self.options_frame.destroy()
+        self.options_frame = make_static_frame(self.window, MAIN_BG, 1600, 1000, 0, 75, "nw")
+        self.window.geometry(DICTIONARY_DIMENSIONS)
+
     def _info(self):
         self._tool_selected(self.info)
         self.notice_label.config(text=INFO_NOTICE)
