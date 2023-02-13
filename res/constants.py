@@ -8,6 +8,7 @@ TEXT_SPEAKER_DIMENSIONS = "597x900"
 INFO_DIMENSIONS = "597x500"
 EXIT_DIMENSIONS = "597x135"
 
+
 # Directories
 APP_ICON_DIR = "res/icons/ico_48.ico"
 HOME_ICON_DIR = "res/icons/home_64.png"
@@ -23,6 +24,8 @@ ZOOM_IN_ICON_DIR = "res/icons/zoom-in_48.png"
 ZOOM_OUT_ICON_DIR = "res/icons/zoom-out_48.png"
 
 DYSLEXIC_FONT_DIR = "res/fonts/OpenDyslexic-Regular.otf"
+
+ENG_DICT_DIR = "res/english_words.txt"
 
 
 # Colours
