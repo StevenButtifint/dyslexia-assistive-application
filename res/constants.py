@@ -52,5 +52,6 @@ COLOUR_OVERLAY_NOTICE = "Colour Overlay - Place the transparent window over text
 READING_EDITOR_NOTICE = "Reading Editor - Edit or type text using custom colours to improve comprehension."
 SPELLCHECKER_NOTICE = "Spellchecker - Check spelling of words in text."
 TEXT_SPEAKER_NOTICE = "Text Speaker - Reads text aloud."
+SPEECH_WRITER_NOTICE = "Speech Writer - Convert voice to text."
 INFO_NOTICE = "Info - Information about the tools along with icon image credits can be found below."
 EXIT_NOTICE = "Are you sure you want to quit?"
