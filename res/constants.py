@@ -43,6 +43,8 @@ OVERLAY_COLOURS = ["#63a6ba", "#1a647a", "#c7a567", "#bf7e08", "#75b072", "#3361
 
 CUSTOM_FONTS = ["OpenDyslexic-Regular"]
 
+LANGUAGES = ["English"]
+
 
 # labels
 HOME_NOTICE = "Welcome! Select a tool to get started."
