@@ -35,7 +35,9 @@ The tools assist the user when completing other reading or writing tasks.
 - TO DO
 
 ### References
-- TO DO
+- The english words dictionary used can be found [here](https://github.com/dwyl/english-words).
+- The dyslexic tailored font used can be found [here](https://opendyslexic.org/download).
+- The links to the icons used can be found [here](https://github.com/StevenButtifint/dyslexia-assistive-application/blob/main/references.txt).
 
 [Back To The Top](#dyslexia-assistive-application)
  
