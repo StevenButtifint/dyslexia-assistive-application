@@ -35,7 +35,10 @@ The tools assist the user when completing other reading or writing tasks.
 ---
 
 ### What I Learned
-- TO DO
+- How to use the gTTS library to interface with the Google Translate text-to speech API.
+- How to use the SpeechRecognition library for performing speech recognition from user input.
+- How the versatility of tools has a direct impact on the user experience.
+- How to bind multiple interaction events to Tkinter widgets
 
 ### References
 - The english words dictionary used can be found [here](https://github.com/dwyl/english-words).
