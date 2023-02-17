@@ -29,6 +29,9 @@ The tools assist the user when completing other reading or writing tasks.
 - **Spellchecker** - Check spelling of words from text against a dictionary.
 - **Text Speaker** - Read text aloud to the user.
 - **Speech to Text** - Convert user's speech to text.
+- **Text Extractor** - Extract text from images instantly.
+- **Text Highlighter** - Highlight text in different colours for easy note-taking and review.
+- **Custom lists** - Create organised lists for acronyms, abbreviations or word spellings.
 ---
 
 ### What I Learned
