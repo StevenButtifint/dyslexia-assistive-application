@@ -10,7 +10,7 @@
 
 ### Table of Contents
 - [Description](#description)
-- [How It Works](#how-it-works)
+- [Tools List](#tools-list)
 - [What I Learned](#what-i-learned)
 - [References](#references)
 
@@ -20,6 +20,7 @@
 
 The application consists of a range of tools that are designed for users with dyslexia.
 The tools assist the user when completing other reading or writing tasks.
+The application consists of Python with Tkinter for the GUI.
 
 ---
 
